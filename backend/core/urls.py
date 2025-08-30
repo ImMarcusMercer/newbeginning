@@ -20,5 +20,5 @@ from backend.api.user_api import UserLoginAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/login/api/', UserLoginAPIView.as_view(), name='user-login'),
+    path('api/', include('api.urls')),
 ]
